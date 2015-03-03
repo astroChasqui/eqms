@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}El Que Mas Sabe | Inicio{% endblock %}
+
+{% block page_content %}
+
+{% if current_user.is_authenticated() %}
+  <p>Hola, {{ current_user.name.split()[0] }}.</p>
+{% else %}
+  <p>Hola, visitante.</p>
+{% endif %}
+
+<p>Lista de usuarios:</p>
+<ul>
+{% for user in users %}
+  <li>{{ user.name }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}El Que Mas Sabe | Ingresar{% endblock %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+
+<div class="page-header">
+  <h1>Ingresar</h1>
+</div>
+
+{{ wtf.quick_form(form) }}
+
+<br /><p>¿Nuevo usuario? <a href="{{ url_for('auth.registrarse') }}">Registrese aquí</a></p>
+
+{% endblock %}

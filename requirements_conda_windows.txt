@@ -1,0 +1,13 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+flask=0.10.1=py34_1
+ipython=2.4.1=py34_0
+itsdangerous=0.24=py34_0
+jinja2=2.7.3=py34_1
+markupsafe=0.23=py34_0
+pip=6.0.8=py34_0
+pyreadline=2.0=py34_0
+python=3.4.2=1
+setuptools=12.2=py34_0
+werkzeug=0.10.1=py34_0
